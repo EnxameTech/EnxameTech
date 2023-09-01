@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Enxame Tech | Home</title>
+  <title>Enxame Tech - Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- ICONES DE PÁGINA E DE APLICATIVOS -->
@@ -34,7 +34,7 @@
       width: 100%;
     }
     #card-index{
-      padding: 2vw;
+      padding: 40px;
     }
     #list-index{
       padding: 20px;
@@ -126,10 +126,6 @@
       {
         color: #003096;
       }
-      header>div.nav>ul>li>a:visited
-      {
-        color: #18130B;
-      }
       .atual
       {
         color: #FCA311 !important;
@@ -162,7 +158,17 @@
         display: none;
       }
 
+     
+
     @media (max-width: 700px){
+
+    
+      .itens-pc{
+        display: none;
+      }
+      .banner{
+        margin-left: 1.5rem;
+      }
       #nav-index{
         justify-content: center;
         margin-left: 0px;
@@ -176,6 +182,7 @@
       }
       .opcoes-index{
         display: none;
+        
       }
       #list-index ul{
         width: 100%;
@@ -183,22 +190,86 @@
       #list-index ul li{
         width: 100%;
       }
-      /* .teste-index{
+      .teste-index{
         scroll-behavior: smooth;
-      } */
+      }
       .dropdown {
-      position: relative;
+      justify-content: center;
+      justify-items: center;
       display: inline-block;
+      margin-left: 5rem;
+      width: 100%;
+
+      }
+      .list-mobile{
+        display: none;
+        background-color: #14213d;
+      }
+      .list-mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #14213d;
+        
       }
 
+      .list-mobile ul li:hover{
+        background-color: #FCA311;
+      }
+
+      .list-mobile ul li a:hover{
+        transform: scale(1.1);
+        color: crimson;
+      }
+
+      .list-mobile ul li a{
+        font-size: 10px;
+        color: #FFFCF8;
+     
+      }
+
+      .list-mobile .list-opcoes{
+        display: block;
+        
+      }
+
+      .list-mobile .opcoes-index{
+        display: block;
+        
+      }
+
+      .list-mobile .opcoes-index button{
+        width: 100%;
+      }
+
+      .a-link{
+        justify-content: space-between;
+      }
+      .button-mobile button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+      }
+
+      .dropdown-list{
+        justify-content: center;
+        width: 60%;
+      }
+
+      .dropdown-list li a{
+        font-size: 10px;
+
+      }
+      
       .dropdown-list {
-        display: none;
+       
         position: absolute;
         top: 100%;
         left: 0;
         background-color: white;
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 2px;
         list-style: none;
       }
 
@@ -206,16 +277,89 @@
         display: block;
       }
 
-    }
-    a:hover
-    {
-      color: #003096 !important;
-      text-decoration: none;
+      .img-menu{
+        height: 20px;
+        width: 25px;
+      }
+      .open{
+        display: block;
+      }
+      .list-opcoes a{
+        text-decoration: none;
+        
+      }
+      #img-index {
+        display: none;
+        
+      }
+      #list-index{
+        width: 100%;
+        height: 500px;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #list-index ul{
+        width: 100%;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        flex: 1;
+        padding: 10px;
+      }
+      #list-index ul li{
+        width: 100%;
+      }
+      #list-index ul li h5{
+        width: 100%;
+      }
+      #list-index ul li p{
+        width: 100%;
+      }
+      .opcoes-index{
+        flex: 1;
+        padding: 10px;
+      }
+      #h1-index{
+        font-size: 15px;
+      }
+      #h1-index img{
+        width: 15px;
+        height: 15px;
+      }
+
+      .title-index{
+        font-size: 15px;
+        width: 100%;
+      }
+
+      .p-index{
+        font-size: 10px;
+        width: 100%;
+      }
+
+      .title-index2{
+        font-size: 16px;
+      }
+
+      .title-index3{
+        font-size: 12px;
+      }
+
+      .p-index3{
+        font-size: 10px;
+      }
+      .card-img-index{
+        margin-left: 8rem;
+        width: 100px ;
+        height: 150px;
+      }
+
     }
   </style>
 </head>
 <body>
-  <div style="background-image: url(./assets/images/ImgHome/template.png);">
+  <div style="background-image: url(./assets/images/ImgHome/Novo\ Projeto.jpg);">
     <header style="background-color: white;">
       <div class="banner"> <!-- Banner -->
         <img src=".//assets/images/banner_light.svg" alt="">
@@ -223,7 +367,7 @@
       <div class="nav"> <!-- Navegação -->
         <ul class="opcoes-index">
           <li>
-            <a class="atual" href="#">
+            <a class="atual" href="./index.html">
               HOME
             </a>            
           </li>
@@ -238,29 +382,13 @@
             </a>            
           </li>
           <li>
-            <a href="./src/pages/blog.html">
-              Blog
-            </a>
-          </li>
-          <li>
             <a href="./src/pages/sobre.html">
               Sobre Nós
             </a>            
           </li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-link active">+</button>
-        <ul class="dropdown-list">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-          <li>Item 5</li>
-          <li>Item 6</li>
-          <li>Item 7</li>
-        </ul>
-      </div>
+      
       <div class="user opcoes-index"> <!-- CADASTRO/LOGIN -->
         <a class="login" href="src/pages/login.html"> <!-- BOTÃO DE LOGIN -->
           <img src="./assets/images/user_light.svg" alt="user icon" style="width: 20px; height: 20px;">
@@ -273,85 +401,94 @@
             CRIAR CONTA
           </span>
         </a>
-        
-      </div>      
+      </div> 
+      <div class="dropdown button-mobile">   
+        <button class="" onclick="menuShow()"><img src="./assets/images/ImgHome/icons redes/icon-menu.svg" alt="" class="img-menu"></button>
+      </div>          
     </header>
+    <div class="dropdown list-mobile">
+      <ul class="dropdown-list">
+        <li class="list-opcoes"><a href="./index.html">Home</a></li>
+        <li class="list-opcoes"><a href="./src/pages/oportunidades.html">Oportunidades</a></li>
+        <li class="list-opcoes"><a href="./src/pages/agendamento.html">Agendamento</a></li>
+        <li class="list-opcoes"><a href="./src/pages/sobre.html">Sobre Nós</a></li>
+        <li class="list-opcoes"><a href="src/pages/login.html" class="a-link">Entrar</a> <a href="src/pages/cadastro.html"  class="a-link">Criar Conta</a></li>
+      </ul>
+    </div> 
   </div>
     
   <main>
     
     <div>
-      <img src="./assets/images/ImgHome/template.png" class="img-fluid" alt="Imagem responsiva">
+      <img src="./assets/images/ImgHome/Novo Projeto.jpg" class="img-fluid" alt="Imagem responsiva">
     </div>
   </main>
-  <div class=" justify-content-center mt-2 mr-1">
+  <div class="container mt-4 mr-2">
     <div class="row justify-content-center">
-      <div class="row justify-content-center col-md-2 mb-2">
-        <img src="./assets/images/ImgHome/1.png" alt="..." class="img-thumbnail zoom-effect">
+      <div class="col-md-4 mb-4">
+        <img src="./assets/images/ImgHome/1.png" alt="..." class="img-thumbnail zoom-effect card-img-index">
       </div>
-      <div class="row justify-content-center col-md-2 mb-2">
-        <img src="./assets/images/ImgHome/2.png" alt="..." class="img-thumbnail zoom-effect">
+      <div class="col-md-4 mb-4">
+        <img src="./assets/images/ImgHome/2.png" alt="..." class="img-thumbnail zoom-effect card-img-index">
       </div>
-      <div class="row justify-content-center col-md-2 mb-2">
-        <img src="./assets/images/ImgHome/3.png" alt="..." class="img-thumbnail zoom-effect">
+      <div class="col-md-4 mb-4">
+        <img src="./assets/images/ImgHome/3.png" alt="..." class="img-thumbnail zoom-effect card-img-index">
       </div>
-      <div class="row justify-content-center col-md-2 mb-2">
-        <img src="./assets/images/ImgHome/4.png" alt="..." class="img-thumbnail zoom-effect">
+      <div class="col-md-4 mb-4">
+        <img src="./assets/images/ImgHome/4.png" alt="..." class="img-thumbnail zoom-effect card-img-index">
       </div>
-      <div class="row justify-content-center col-md-2 mb-2">
-        <img src="./assets/images/ImgHome/5.png" alt="..." class="img-thumbnail zoom-effect">
+      <div class="col-md-4 mb-4">
+        <img src="./assets/images/ImgHome/5.png" alt="..." class="img-thumbnail zoom-effect card-img-index">
       </div>
-      <div class="row justify-content-center col-md-2 mb-2">
-        <img src="./assets/images/ImgHome/6.png" alt="..." class="img-thumbnail zoom-effect">
+      <div class="col-md-4 mb-4">
+        <img src="./assets/images/ImgHome/6.png" alt="..." class="img-thumbnail zoom-effect card-img-index">
       </div>
     </div>
   </div>
  
-  <div  class="d-flex justify-content-around border mt-3" style="width: 100%; height: 100vh;" id="card-index">
-    <img src="./assets/images/ImgHome/index card.png" class="img-fluid mt-5 opcoes-index" alt="Imagem responsiva" style="width: 40vw; height: 50vh;">
+  <div  class="d-flex justify-content-around border mt-5" style="width: 100%; height: 100vh;" id="card-index">
+    <img src="./assets/images/ImgHome/index card.png" class="img-fluid mt-5 opcoes-index" alt="Imagem responsiva" style="width: 40%; height: 60%;">
     <div class="card text-center mt-5" style="width: 35rem; height: 80%;">
       <div class="card-body mt-5">
-        <h5 class="card-title">🚀 Dê Asas ao Seu Futuro com a Enxame Tech! 🚀</h5>
-        <p class="card-text mt-5">Você está pronto para desbravar os horizontes da tecnologia e se tornar um mestre na área? Prepare-se para uma jornada transformadora com a Enxame Tech!</p>
-        <a href="src/pages/oportunidades.html" class="btn  mt-5 button-index-1 zoom-effect">Não perca a oportunidade!</a>
+        <h5 class="card-title title-index2">🚀 Dê Asas ao Seu Futuro com a Enxame Tech! 🚀</h5>
+        <p class="card-text mt-5 p-index3">Você está pronto para desbravar os horizontes da tecnologia e se tornar um mestre na área? Prepare-se para uma jornada transformadora com a Enxame Tech!</p>
+        <a href="./src/pages/cadastro.html" class="btn  mt-5 button-index-1 zoom-effect title-index2">Não perca a oportunidade!</a>
       </div>
     </div>
 
   </div>
   <div class="mt-5 text-center" >
-    <h1><img src="./assets/images/ImgHome/Logo - enxameTECH - Copia.png" alt="" > Por que escolher a Enxame Tech? <img src="./assets/images/ImgHome/Logo - enxameTECH - Copia.png" alt="" ></h1>
+    <h1 id="h1-index"><img src="./assets/images/ImgHome/Logo - enxameTECH - Copia.png" alt="" > Por que escolher a Enxame Tech? <img src="./assets/images/ImgHome/Logo - enxameTECH - Copia.png" alt="" ></h1>
   </div>
 
-  <div class="d-flex text-center" id="list-index">
-  
-    
-    <ul id="porq" class="list-group list-group-light mb-3 mt-4 " style="width: 50%; height: 100vh;">
+  <div class="d-flex text-center itens-pc" id="list-index">
+    <ul class="list-group list-group-light mb-3 mt-4 " style="width: 50%; height: 100vh;">
       
       <li class="list-group-item">
-        <h5 class="fw-bold">🔥 Variedade de Cursos:</h5>
+        <h5 class="fw-bold title-index">🔥 Variedade de Cursos:</h5>
    
-        <p class="text-muted mb-0">
+        <p class="text-muted mb-0 p-index">
           De desenvolvimento web e inteligência artificial a segurança cibernética e análise de dados, temos uma ampla gama de cursos que cobrem os tópicos mais quentes da indústria de tecnologia.
         </p>
         </li>
         <li class="list-group-item">
-          <h5 class="fw-bold">🌟 Instrutores Experientes:</h5>
+          <h5 class="fw-bold title-index">🌟 Instrutores Experientes:</h5>
          
-          <p class="text-muted mb-0">
+          <p class="text-muted mb-0 p-index">
              Nossos instrutores são profissionais experientes que vivem e respiram tecnologia. Eles vão orientar você através das complexidades do aprendizado técnico de forma clara, prática e envolvente.
           </p>
         </li>
-        <li class="list-group-item">
-          <h5 class="fw-bold">🚀 Oportunidades de Carreira:</h5>
+        <li class="list-group-item ">
+          <h5 class="fw-bold title-index">🚀 Oportunidades de Carreira:</h5>
         
-          <p class="text-muted mb-0">
+          <p class="text-muted mb-0 p-index" >
              A tecnologia molda o mundo moderno, e profissionais qualificados estão em alta demanda. Ao concluir nossos cursos, você estará pronto para enfrentar os desafios do setor e conquistar novas oportunidades de carreira.
           </p>
       </li>
       <li class="list-group-item">
-        <h5 class="fw-bold">🎉 Comunidade Vibrante: </h5>
+        <h5 class="fw-bold title-index">🎉 Comunidade Vibrante: </h5>
       
-        <p class="text-muted mb-0">
+        <p class="text-muted mb-0 p-index">
           Junte-se a uma comunidade de alunos apaixonados e mentores especializados que compartilham seu entusiasmo pela tecnologia. Networking, colaboração e inspiração aguardam você aqui na Enxame Tech.        </p>
       </li>
     </ul>
@@ -367,46 +504,45 @@
   </div>
 
 
-  <div id="caracteristicas" class="container text-center py-5 shadow-lg p-3 mb-5 bg-white rounded teste-index">
-    <h1 class="mb-4">Ei, você tem essas características?</h1>
+  <div class="container text-center py-5 shadow-lg p-3 mb-5 bg-white rounded teste-index">
+    <h1 class="mb-4 title-index2">Ei, você tem essas características?</h1>
     <div class="d-flex">
       <div id="list-example" class="list-group text-index">
-        <a class="list-group-item list-group-item-action link-index " href="#list-item-1">Conhecimento e Proficiência</a>
-        <a class="list-group-item list-group-item-action link-index" href="#list-item-2">Comunicação Clara</a>
-        <a class="list-group-item list-group-item-action link-index" href="#list-item-3">Adaptabilidade</a>
-        <a class="list-group-item list-group-item-action link-index" href="#list-item-4">Liderança Positiva</a>
-        <a class="list-group-item list-group-item-action link-index" href="#list-item-5">Feedback Construtivo</a>
+        <a class="list-group-item list-group-item-action link-index title-index3" href="#list-item-1">Conhecimento e Proficiência</a>
+        <a class="list-group-item list-group-item-action link-index title-index3" href="#list-item-2">Comunicação Clara</a>
+        <a class="list-group-item list-group-item-action link-index title-index3" href="#list-item-3">Adaptabilidade</a>
+        <a class="list-group-item list-group-item-action link-index title-index3" href="#list-item-4">Liderança Positiva</a>
+        <a class="list-group-item list-group-item-action link-index title-index3" href="#list-item-5">Feedback Construtivo</a>
       </div>
       <div class="text-index flex-grow-1 teste-index"> 
-        <!-- <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="max-height: 70vh; overflow-y: auto;"> -->
-          <div data-target="#list-example" data-offset="0" style="max-height: 70vh; overflow-y: auto;">          
-          <h4 id="list-item-1" class="h4-index">Conhecimento e Proficiência</h4>
-          <p>
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="max-height: 70vh; overflow-y: auto;">
+          <h4 id="list-item-1" class="h4-index title-index3">Conhecimento e Proficiência</h4>
+          <p class="p-index3">
             Um bom monitor deve ter um sólido entendimento do assunto que está sendo ensinado ou discutido. Isso permite que eles forneçam explicações claras, resolvam dúvidas e orientem os colegas de forma eficaz.
           </p>
-         <h4 id="list-item-2" class="h4-index">Comunicação Clara</h4>
-          <p>
+         <h4 id="list-item-2" class="h4-index title-index3">Comunicação Clara</h4>
+          <p class="p-index3"> 
             A habilidade de comunicar conceitos de maneira clara e acessível é fundamental para um monitor. Eles devem ser capazes de transmitir informações de forma compreensível, responder a perguntas e facilitar discussões produtivas.
           </p>
-          <h4 id="list-item-3" class="h4-index">Adaptabilidade</h4>
-          <p>
+          <h4 id="list-item-3" class="h4-index title-index3">Adaptabilidade</h4>
+          <p class="p-index3">
             Um monitor deve ser capaz de se adaptar às necessidades e ritmos de aprendizado variados de seus colegas. Eles podem ajustar sua abordagem para se adequar a diferentes estilos de aprendizado e níveis de compreensão.
           </p>
-          <h4 id="list-item-4" class="h4-index">Liderança Positiva</h4>
-          <p>
+          <h4 id="list-item-4" class="h4-index title-index3">Liderança Positiva</h4>
+          <p class="p-index3">
             Um monitor inspirador assume uma postura de liderança positiva. Eles incentivam a participação, mantêm o foco nas metas de aprendizado e promovem uma atmosfera de respeito mútuo e colaboração.
           </p>
-          <h4 id="list-item-5" class="h4-index">Feedback Construtivo</h4>
-          <p>
+          <h4 id="list-item-5" class="h4-index title-index3">Feedback Construtivo</h4>
+          <p class="p-index3">
             Fornecer feedback construtivo é importante para ajudar os colegas a melhorar. Um monitor deve ser capaz de oferecer elogios quando apropriado e apontar áreas de melhoria de maneira respeitosa e útil.
           </p>
         </div>
       </div>   
     </div>
-    <h5 class="mt-5">
+    <h5 class="mt-5 title-index2">
       Se sim, seja um de nossos monitores! Faça a diferença, seja a inspiração de diversas pessoas!
     </h5>
-    <a href="src/pages/cadastro.html" class="btn  btn-lg mt-4 button-index-1 zoom-effect" >VAMOS LÁ!</a>
+    <a href="./src/pages/cadastro.html" class="btn  btn-lg mt-4 button-index-1 zoom-effect title-index2" >Inscreva-se agora!</a>
   </div>
 
   
@@ -419,6 +555,143 @@
 
   <!-- Footer -->
 <footer class=" text-center text-white">
+  <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-4">
+        <h5 class="text-uppercase">Home</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="./src/pages/login.html" class="text-white zoom-effect">Sign in</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-4">
+        <h5 class="text-uppercase">Oportunidades</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="./src/pages/oportunidades.html" class="text-white zoom-effect">1</a>
+          </li>
+          <li>
+            <a href="./src/pages/oportunidades.html" class="text-white zoom-effect">2</a>
+          </li>
+         
+    
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-4">
+        <h5 class="text-uppercase">Blog</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="./src/pages/blog.html" class="text-white zoom-effect">Notícias</a>
+          </li>
+          <li>
+            <a href="./src/pages/blog.html" class="text-white zoom-effect">Atualizações</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-4">
+        <h5 class="text-uppercase">Sobre Nós</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="./src/pages/sobre.html" class="text-white zoom-effect">Politica</a>
+          </li>
+          <li>
+            <a href="./src/pages/sobre.html" class="text-white zoom-effect">Valores</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </section>
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4" >
+              <input type="email" id="form5Example21" class="form-control zoom-effect" placeholder="Escreva seu email:"/>
+              
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4 zoom-effect">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <section class="">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1 zoom-effect" href="https://www.facebook.com" role="button"
+        ><img src="./assets/images/ImgHome/icons redes/facebook.jpg" alt=""></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1 zoom-effect" href="https://github.com/" role="button"
+        ><img src="./assets/images/ImgHome/icons redes/github.png" alt=""></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1 zoom-effect" href="https://www.google.com/" role="button"
+        ><img src="./assets/images/ImgHome/icons redes/google.png" alt=""></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1 zoom-effect" href="instagram.com" role="button"
+        ><img src="./assets/images/ImgHome/icons redes/instagram.jpg" alt=""></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1 zoom-effect" href="https://www.linkedin.com/" role="button">
+        <img src="./assets/images/ImgHome/icons redes/linkedin.png" alt=""></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1 zoom-effect" href="https://twitter.com/home" role="button"
+        ><img src="./assets/images/ImgHome/icons redes/twitter.png" alt=""></a>
+    </section>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
    
     <a class="text-white" href="#">© 2023 Enxame Tech. Todos os direitos reservados.</a>
@@ -437,7 +710,7 @@
 
 
 
-
+  <script src="./src/js/pages/index.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
