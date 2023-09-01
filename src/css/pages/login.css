@@ -74,21 +74,20 @@ p {
     color: var(--white);
 }
 
-.topo .exit:hover {
+.exit:hover {
     background-color: var(--white);
     color: var(--almostRed);
     border: 2px solid var(--almostRed);
 }
 
-.topo .exit a {
-    width: 100%;
-    height: 100%;
+.exit a {
+    color: inherit;
     text-decoration: none;
 }
 
-.topo .exit a:hover {
+/* .exit a:hover {
     color: var(--white);
-}
+} */
 
 .buttons {
     display: flex;
